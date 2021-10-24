@@ -10,5 +10,5 @@
   --color-pallets-opposite: #4B9EBF;
   --color-pallets-light: #84C1D9;
   --color-white: #fff;
-  --color-alert: rgb(200, 20, 20);
+  --color-alert: red;
 }

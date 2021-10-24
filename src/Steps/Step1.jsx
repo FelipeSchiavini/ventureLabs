@@ -23,19 +23,19 @@ const Step1 = () => {
       <ErrorType error = {errors.firstName} />
       {errors.firstName && errors.firstName.type === "maxLength" && (
       <span className ="alert">Max length exceeded</span>)}
-      <input {...register("firstName", { required: true , maxLength: 30})} placeholder="Fulano de Tal" aria-invalid={errors.firstName ? "true" : "false"}  id="firstName"/>
+      <input {...register("firstName", { required: true , maxLength: 30})} placeholder="Rafael" aria-invalid={errors.firstName ? "true" : "false"}  id="firstName"/>
          
       <label htmlFor="lastName">Last Name:</label>
       <ErrorType error = {errors.lastName} />
-      <input {...register("lastName", { required: true })} placeholder="Fulano de Tal" aria-invalid={errors.lastName ? "true" : "false"} id="lastName"/>
+      <input {...register("lastName", { required: true })} placeholder="Silva" aria-invalid={errors.lastName ? "true" : "false"} id="lastName"/>
 
       <label htmlFor="email">E-mail:</label>
       <ErrorType error = {errors.email} />
-      <input {...register("email", { required: true })} placeholder="fulano@gmail.com" type="email" aria-invalid={errors.email ? "true" : "false"} id ="email"/>
+      <input {...register("email", { required: true })} placeholder="rafaelsilva@gmail.com" type="email" aria-invalid={errors.email ? "true" : "false"} id ="email"/>
       
       <label htmlFor="email">Phone number:</label>
       <ErrorType error = {errors.phone} />
-      <input {...register("phone", { required: true, maxLength: 13})} placeholder="(11)99999-9999" type="tel" aria-invalid={errors.phone ? "true" : "false"} id="phone" />
+      <input {...register("phone", { required: true, maxLength: 13})} placeholder="Ex: 11 99999-9999" type="tel" aria-invalid={errors.phone ? "true" : "false"} id="phone" />
       <button> Next </button>
     </form>
   );

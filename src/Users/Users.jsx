@@ -33,7 +33,7 @@ function Users () {
                             <p className="selectP">cep: {user.cep}</p>
                             <p className="selectP">cpf: {user.cpf}</p>                            
                         </div>
-                        </>                        )                   
+                        </>)                   
                 } else {
                     return(
                         <div className="user-item" onClick= {() => handleInfo(user.id)} >
