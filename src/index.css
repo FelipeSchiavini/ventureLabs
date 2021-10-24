@@ -1,0 +1,14 @@
+:root{
+  font-size: 62.5%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  --color-pallets-dark: #124673;
+  --color-pallets-blue: #2E78A6;
+  --color-pallets-grey: #405F73;
+  --color-pallets-opposite: #4B9EBF;
+  --color-pallets-light: #84C1D9;
+  --color-white: #fff;
+  --color-alert: rgb(200, 20, 20);
+}
