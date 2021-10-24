@@ -29,23 +29,22 @@ function App() {
 
   return (
     <StateMachineProvider>
-    <Router>
-    <div className="app-container" >
-      <Navigation className={classNav} handleNav = {handleNavHide}/>
-      <div className="app-routes">
-        <div className="header">
-          <FontAwesomeIcon icon ={faBars} className="icon-bar" onClick = {handleNavShow}/>
-          <h1>TEST VENTURELABS FRONT-END</h1>
+      <Router>
+        <div className="app-container" >
+          <Navigation className={classNav} handleNav = {handleNavHide}/>
+          <div className="app-routes">
+            <div className="header">
+              <FontAwesomeIcon icon ={faBars} className="icon-bar" onClick = {handleNavShow}/>
+              <h1>TEST VENTURELABS FRONT-END</h1>
+            </div>
+            <Route exact path="/" component={Step1} />
+            <Route path="/step2" component={Step2} />
+            <Route path="/Step3" component={Step3} />
+            <Route path="/users" component={Users} />
+          </div>
         </div>
-        <Route exact path="/" component={Step1} />
-        <Route path="/step2" component={Step2} />
-        <Route path="/Step3" component={Step3} />
-        <Route path="/users" component={Users} />
-      </div>
-    </div>
-    </Router>
-
-  </StateMachineProvider>
+      </Router>
+    </StateMachineProvider>
   );
 }
 

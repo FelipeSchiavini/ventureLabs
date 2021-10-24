@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { withRouter } from "react-router-dom";
 import { useStateMachine } from "little-state-machine";
-import {finishAction} from "../Utilities/Action";
+import { finishAction } from "../Utilities/Action";
 import { ErrorType } from '../Utilities/Errors'
 import './FormStyle/Form.css'
 

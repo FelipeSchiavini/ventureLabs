@@ -37,8 +37,8 @@ function Users () {
                 } else {
                     return(
                         <div className="user-item" onClick= {() => handleInfo(user.id)} >
-                        <span>{user.lastName}, {user.firstName} </span>
-                        <FontAwesomeIcon icon ={faChevronRight} className="icon"/>
+                            <span>{user.lastName}, {user.firstName} </span>
+                            <FontAwesomeIcon icon ={faChevronRight} className="icon"/>
                         </div>)
                 }
             })}
