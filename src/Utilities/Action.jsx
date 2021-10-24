@@ -1,4 +1,3 @@
-
 export function firstAction(state, payload){
   return{
     ...state,
@@ -9,7 +8,6 @@ export function firstAction(state, payload){
       ...payload
     }
 }}
-
 
 export function updateAction(state, payload){
   return{
@@ -34,11 +32,9 @@ export function finishAction(state, payload){
 }}
 
 export function changeAction(state, id){
-  state.list.forEach(element => {
-    if (element.id === id){
-      element.show = element.show ? false : true 
-  }});
+
   return{
-    ...state
+    ...state,
+    list: state.list.map((item) => item.id === id ? {...item, show: !item.show} : item)
   }
 }

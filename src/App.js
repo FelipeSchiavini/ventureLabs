@@ -19,11 +19,11 @@ createStore({
 function App() {
   const [classNav, setClassNav] = useState("NavCointainer");
 
-  const hangleNavShow = () => {
+  const handleNavShow = () => {
     setClassNav("NavCointainerShow")
   }
 
-  const hangleNavHide = () => {
+  const handleNavHide = () => {
     setClassNav("NavCointainer")
   }
 
@@ -31,10 +31,10 @@ function App() {
     <StateMachineProvider>
     <Router>
     <div className="app-container" >
-      <Navigation className={classNav} hangleNav = {hangleNavHide}/>
+      <Navigation className={classNav} handleNav = {handleNavHide}/>
       <div className="app-routes">
         <div className="header">
-          <FontAwesomeIcon icon ={faBars} className="icon-bar" onClick = {hangleNavShow}/>
+          <FontAwesomeIcon icon ={faBars} className="icon-bar" onClick = {handleNavShow}/>
           <h1>TEST VENTURELABS FRONT-END</h1>
         </div>
         <Route exact path="/" component={Step1} />
